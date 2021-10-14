@@ -1,0 +1,12 @@
+#Summer
+0 15 * 5-9 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py tou > ./logTou.txt
+10 15 * 5-9 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py check > ./logTouCheck.txt
+0 18 * 5-9 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py backup > ./logBackup.txt
+
+#Winter
+0 06 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py tou > ./logTou.txt
+10 06 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py check > ./logTouCheck.txt
+0 09 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py backup > ./logBackup.txt
+0 17 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py tou > ./logTou.txt
+10 17 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py check > ./logTouCheck.txt
+0 20 * 1-4,10-12 1-5 cd /home/pi/powerwallCloud && /usr/bin/python ./powerwallDriver.py backup > ./logBackup.txt

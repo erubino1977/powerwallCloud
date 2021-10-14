@@ -2,10 +2,9 @@ import smtplib
 import traceback
 
 # You may neeed to enable non secure, disable 2FA on gmail
-gmail_user = 'gmailemail'
-gmail_password = 'gmailpass'
 
-
+gmail_user = 'powerwall@erubino.net'
+gmail_password = 'Genomos1!'
 
 def main(emailItem, bodyText):
     try:
@@ -28,3 +27,6 @@ def main(emailItem, bodyText):
     except:
         traceback.print_exc()
         print 'Something went wrong...'
+
+
+
